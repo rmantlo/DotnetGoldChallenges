@@ -15,7 +15,8 @@ namespace _04_OutingsTests
             _outingsRepo = new OutingsRepository();
             _outings = new Outings(DateTime.Parse("5/5/2019"), 27, 17, 459, TypeOfEvent.AmusementPark);
 
-            _outingsRepo.CreateOuting();
+            _outingsRepo.CreateOuting(_outings);
+
         }
     }
 }
